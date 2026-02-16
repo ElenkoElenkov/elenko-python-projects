@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafes with WiFi</title>
+</head>
+<body>
+
+<h1>☕ Cafes for Remote Work</h1>
+
+<a href="/add">Add New Cafe</a>
+
+<ul>
+{% for cafe in cafes %}
+    <li>
+        <strong>{{ cafe.name }}</strong> – {{ cafe.location }}
+        | WiFi: {{ cafe.has_wifi }}
+        | Power: {{ cafe.has_sockets }}
+
+        <a href="/delete/{{ cafe.id }}">❌</a>
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

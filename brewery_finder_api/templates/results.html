@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+
+<h1>Breweries in {{ city }}</h1>
+
+{% for b in breweries %}
+    <h3>{{ b.name }}</h3>
+    <p>Type: {{ b.brewery_type }}</p>
+
+    {% if b.website_url %}
+        <a href="{{ b.website_url }}" target="_blank">Visit Website</a>
+    {% endif %}
+
+    <hr>
+{% endfor %}
+
+<a href="/">Search again</a>
+
+</body>
+</html>

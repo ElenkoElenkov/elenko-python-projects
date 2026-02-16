@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Mac
+.DS_Store
+
+# Database
+*.db
+
+# Environment variables
+.env
+
+# PyCharm
+*.iml
+
+# Jupyter
+.ipynb_checkpoints
